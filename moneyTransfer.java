@@ -21,16 +21,20 @@ class moneyTransfer {
                 throw new Exception("Sender and Receiver account number cannot be the same");
             }
 
-            if (transfer > 50000) {
+            else if (transfer > 50000) {
                 throw new Exception("Transfer amount should not exceed 50000");
             }
 
-            if(transfer > senderbalance) {
+            else if(transfer > senderbalance) {
                 throw new Exception("Insufficient balance");
             }
 
-            if(transfer <= 0) {
+            else if (transfer <= 0) {
                 throw new Exception("Transfer amount must be positive");
+            }
+
+            else {
+                System.out.println("ENter valid input");
             }
 
             senderbalance = senderbalance - transfer;
