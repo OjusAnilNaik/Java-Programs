@@ -14,7 +14,8 @@ class Stock {
          }
         else {
             System.out.println("Customer " + customer + " purchase failed");
-            System.out.println("Insufficient stockss!!");        }
+            System.out.println("Insufficient stockss!!");
+        }
     }
 }
 
