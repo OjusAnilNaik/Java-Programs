@@ -30,28 +30,24 @@ public class spiral {
         while (top<=bottom && left<=right) {
 
             for (int j=left; j<= right; j++) {
-                System.out.print(matrix[top][j] + " ");
+                System.out.print(matrix[top][j] + " "); //Left to right
             }
             top++;
 
             for (int i=top; i<= bottom; i++) {
-                System.out.print(matrix[i][right] + " ");
+                System.out.print(matrix[i][right] + " "); //Top to bottom
             }
             right--;
 
-
-                for (int j=right; j>=left; j--) {
-                    System.out.print(matrix[bottom][j] + " ");
-                }
-                bottom--;
-            
-
-            
-                for (int i=bottom; i>=top; i--) {
-                    System.out.print(matrix[i][left] + " ");
-                }
-                left++;
-            
+            for (int j=right; j>=left; j--) {
+                System.out.print(matrix[bottom][j] + " "); //Right to left
+            }
+            bottom--;
+             
+            for (int i=bottom; i>=top; i--) {
+                System.out.print(matrix[i][left] + " "); //Bottom to up
+            }
+            left++;
         }
 
         sc.close();
