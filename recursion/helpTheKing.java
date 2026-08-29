@@ -23,6 +23,5 @@ public class helpTheKing {
 
         int result = power(base, exponent);
         System.out.println("Result: " + result);
-
     }
 }
