@@ -115,6 +115,9 @@ public class SLL {
         list.insertAtEnd(30);
         list.insertAtBeginning(10);
         list.insertAtPosition(20, 2);
+        list.deleteAtBeginning();
+        list.deleteAtEnd();
+        list.display();
         sc.close();
     }
 }
