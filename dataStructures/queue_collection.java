@@ -2,9 +2,9 @@ package dataStructures;
 
 import java.util.*;
 
-public class queue {
-    static Queue<Integer> queue = new LinkedList<>();
-
+public class queue_collection {
+    //static Queue<Integer> queue = new LinkedList<>();
+    static Queue<Integer> queue = new PriorityQueue<>();
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
