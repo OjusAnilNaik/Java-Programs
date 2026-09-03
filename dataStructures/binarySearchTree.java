@@ -53,7 +53,6 @@ class BST {
         return current;
     }
 
-    // Inorder: Left -> Root -> Right
     public void inorder(Node node) {
         if (node == null)
             return;
@@ -63,7 +62,6 @@ class BST {
         inorder(node.right);
     }
 
-    // Preorder: Root -> Left -> Right
     public void preorder(Node node) {
         if (node == null)
             return;
@@ -73,7 +71,6 @@ class BST {
         preorder(node.right);
     }
 
-    // Postorder: Left -> Right -> Root
     public void postorder(Node node) {
         if (node == null)
             return;
